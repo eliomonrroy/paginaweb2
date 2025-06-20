@@ -100,19 +100,19 @@ main {
     color: #a13fd1;
     border: 2px solid #3d7edb;
     border-radius: 45px 45px 45px 45px; /* Bordes redondeados */
-    padding: 20px;
-    width: 800px;     /* Ajusta al contenido */
+    padding: 10px;
+    width: 500px;     /* Ajusta al contenido */
     height: auto;          /* Tamaño fijo */
     max-width: 100%;           /* Se adapta en pantallas pequeñas */
     min-width: 250px;          /* No se hace demasiado pequeño */
-    margin: 0;
+    margin: 0 auto; /* Centrado horizontal */
     text-align: center;
     font-size: 25px;
-    box-sizing: border-box;    /* Incluye el padding y border en el ancho */
 }
 
 .info-articulo img {
-    display: block;
+    display: flex;
+    flex-direction: row; /* Alinear los elementos verticalmente */
     margin: 0 auto 20px auto;
     width: 90%;                /* Usa porcentaje del ancho del artículo */
     min-width: 150px;          /* Tamaño mínimo para que no sea muy pequeño */
@@ -123,8 +123,8 @@ main {
 }
 /* sección central */
 section {
-    width: 100%;                /* Cambiado a 100% para usar todo el ancho disponible */
-    padding: 30px;              /* Aumentado el padding para más espacio */
+    width: 90%;                /* Cambiado a 100% para usar todo el ancho disponible */
+    padding: 10px;              /* Aumentado el padding para más espacio */
     display: flex;   /* Usar flexbox para organizar las tarjetas */
     flex-wrap: wrap; 
     flex-direction: row;         /* Permitir que las tarjetas se ajusten en múltiples filas */
@@ -137,7 +137,7 @@ section {
 section figure {
     display: flex;
     flex-direction: column; /* Alinear los elementos verticalmente */
-    width: 30%;              /* Ancho fijo para las tarjetas */
+    width: 27%;              /* Ancho fijo para las tarjetas */
     margin: 15px;              /* Margen uniforme */
     border: 1px solid blue;
     border-radius: 15px;
@@ -159,8 +159,10 @@ section figure p {
     padding: 10px;
     text-align: center;
     background-color: #8ec6fc;
+    display: flex;
+    flex-direction: row; /* Alinear el texto verticalmente */
     color: #a13fd1;
-    font-size: 30px;      /* Tamaño de texto ajustado */
+    font-size: 20px;      /* Tamaño de texto ajustado */
 }
 /* footer */
 footer {
@@ -205,3 +207,5 @@ footer p:last-child {
     font-size: 1em;
     margin-top: 8px;
 }
+
+
